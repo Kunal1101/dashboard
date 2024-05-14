@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+         "rentalId":"# 2154 5684",
+          "gpuName":"NVIDIA GH200 GraceHopper™",
+          "spec": {
+              "vcpu": "24",
+              "vram": "22",
+              "ram": "76",
+              "gpu": "76"
+          },
+          "payment": "$830/week"
+    },
+    {
+        "id":2,
+         "rentalId":"# 2154 5684",
+          "gpuName":"NVIDIA GH200 GraceHopper™",
+          "vcpu": "24",
+          "vram": "22",
+          "ram": "76",
+          "gpu": "76",
+          "payment": "$830/week"
+    },
+    {
+        "id":3,
+         "rentalId":"# 2154 5684",
+          "gpuName":"NVIDIA GH200 GraceHopper™",
+          "vcpu": "24",
+          "vram": "22",
+          "ram": "76",
+          "gpu": "76",
+          "payment": "$830/week"
+    },
+    {
+        "id":4,
+         "rentalId":"# 2154 5684",
+          "gpuName":"NVIDIA GH200 GraceHopper™",
+          "vcpu": "24",
+          "vram": "22",
+          "ram": "76",
+          "gpu": "76",
+          "payment": "$830/week"
+    }
+]
+

@@ -1,0 +1,6 @@
+export const DASHBOARD = "dashboard"
+export const RENTAL = "rental"
+export const NODES = "nodes"
+export const LAST_SELECTED = "last_selected"
+export const RENTAL_MOBILE = "rental_mobile"
+export const NODE_MOBILE = "node_mobile"

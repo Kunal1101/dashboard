@@ -1,0 +1,1010 @@
+body {
+  background-color: #000;
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 20px;
+}
+p {
+  margin-bottom:  0px !important;
+}
+/* header starts */
+.site_logo {
+  width: 120px;
+}
+.site_header {
+  padding: 12px 12px 12px 10px;
+  border-width: 2px 0;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .25);
+}
+.header_btn {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 6px 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: all .5s;
+}
+.header_btn:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+.site_header  .gradient-cta::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  background-image: url("./Assets/gradient_cta_top.png");
+  background-size: 110px;
+  width: 110px;
+  height: 9px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.site_header  .gradient-cta::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: -4px;
+  background-image: url("./Assets/gradient_cta_bottom.png");
+  background-size: 110px;
+  width: 110px;
+  height: 10px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+/* Header ends */
+/* sidebar starts */
+.sidebar_panel {
+  height: 100%;
+}
+.sidebar {
+  padding: 30px 15px;
+  border-width: 2px 0;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .25);
+  height: 100%;
+}
+.sidebar .nav_links {
+  width: 100%;
+  padding: 12px 12px 12px 10px;
+  border-width: 2px 0;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .25);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  height: fit-content;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all .5s;
+}
+.sidebar .nav_links:hover {
+  border-color: #fff;
+  background: linear-gradient(90deg, rgba(116,248,45,1) 0%, rgba(138,245,234,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.activeNavLinks,
+.activeNavLinks:hover {
+  border-color: #fff  !important;
+  background: linear-gradient(90deg, rgba(116,248,45,1) 0%, rgba(138,245,234,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;;
+}
+.toggleIcon {
+  padding: 10px;  
+}
+.toggleIcon img {
+  width: 20px;
+}
+.toggleIcon::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  background-image: url("./Assets/gradient_border_small_top.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 10px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.toggleIcon::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  background-image: url("./Assets/gradient_border_small_bottom.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 15px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.social_links_box {
+  margin-top: 100px;
+}
+.social_links_box .social_link {
+  border-radius: 12px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .30);
+  padding: 6px 12px;
+}
+.social_link {
+  color: #fff;
+  margin: 10px;
+  font-size: 14px;
+  border-width: 2px 0;
+}
+.social_link i {
+    transition: all .5s;
+    color: #fff;
+}
+.social_link:hover i {
+  color: #fff;
+  transform: scale(1.3);
+}
+/* Siderbar ends */
+/* Component work start */
+.componentMainScreen {
+  border: 1px solid rgba(255,255,255, .25);
+  border-radius: 20px;
+}
+.mainComponentHeader .componentHeading {
+  font-weight: 500;
+  border-width:  0 2px;
+  padding: 0px 40px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .30);
+}
+.mainComponentHeader .headerSearchBar,
+.mainComponentHeader .headerSearchBar:focus-visible {
+  background-color: transparent;
+  border-width: 2px 0px;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .25);
+  outline: none;
+  color: #fff;
+}
+.dropDownbtn {
+  background: linear-gradient(90deg, rgba(32,32,32,0.52) 0%, rgba(15,16,4,0.47) 100%);
+  background-color: transparent;
+  border-width: 2px 0px;
+  font-weight: 500;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .25);
+  outline: none;
+  color: rgba(255,255,255,.5);
+  text-align: left;
+}
+.dropDownbtn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  background-image: url("./Assets/dropDownIcon.png");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  height: 12px;
+  width: 12px;
+  border: none;
+  transform: translateY(-50%);
+}
+.dashboardData {
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255, .25);
+}
+.dashboardData .dataHeading {
+  font-size: 25px;
+  font-weight: 500;
+}
+.resourcesData .resourcesHeading {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(255,255,255,.5);
+}
+.resourcesData .resourceValue {
+  border-width:  0 2px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .25);
+}
+.resourceValue h4 {
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;  
+  color: #fff;
+  font-size: 20px;
+  margin: 0px 0px 10px;
+  font-weight: 600;
+}
+.resourceValue h4 sup {
+  color: rgba(255,255,255,.5);
+  font-size: 12px;
+}
+.resourceValue .category {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  display: block;
+}
+.dasboardDataTable {
+  color: #fff;
+  font-weight: 500;
+}
+.tableHead {
+  color: rgba(255,255,255,.5);
+  font-weight: 500;
+}
+thead tr {
+  border: none;
+}
+
+tr {  
+  border-width: 1px 0px;
+  border-style: solid;
+  border-radius: 16px;
+  border-color: rgba(255,255,255, .25);
+}
+
+thead th {
+  border: none;
+}
+td{
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px 10px 0 !important;
+  vertical-align: middle;
+}
+th {
+  padding-left: 0 !important;
+}
+td .specValue {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+}
+td .specValue span {
+  font-size: 16px;
+  color: #fff;
+}
+td sup {
+  font-size: 8px;
+}
+.table_btn button {
+  border: none;
+  background-color: transparent;
+}
+.table_btn .gradient-cta::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("./Assets/gradient_cta_top.png");
+  background-size: 100%;
+  width: 100%;
+  height: 8px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.table_btn .gradient-cta::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background-image: url("./Assets/gradient_cta_bottom.png");
+  background-size: 100%;
+  width: 100%;
+  height: 10px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.rentalCard {
+  border-width: 2px 0px;
+  padding: 0 0 20px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+}
+.rentalCard .rentalCardName {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  border-width: 0px 0px 2px 0px;
+  padding: 15px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+  background-color: rgb(32 32 32 / 48%);
+}
+.rentalCardName sup {
+  font-size: 10px;
+  margin-left: 4px;
+}
+.rentalCard .rentalCardInfo {
+  border-width: 0px 0px 2px 0px;
+  padding: 0px 15px 5px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+}
+.rentalGpuSpecBox {
+  width: 48%;
+  background-color: #0D0D0B;
+  border-radius: 14px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.rentalGpuSpecBox::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-style: solid;
+}
+.rentalGpuSpecBox:nth-child(1)::before {
+  border-width: 0 2px 2px 0;
+  border-color: rgba(255, 255, 255, .20);
+  border-radius: 0 0 14px 0;
+  bottom: 0;
+  right: 0;
+}
+.rentalGpuSpecBox:nth-child(2)::before  {
+  border-width: 0px 0px 2px 2px;
+  border-color: rgba(255, 255, 255, .20);
+  border-radius: 0 0 0 14px;
+  bottom: 0;
+  left: 0;
+}
+.rentalGpuSpecBox:nth-child(3)::before {
+  border-width: 2px 2px 0 0;
+  border-color: rgba(255, 255, 255, .20);
+  border-radius: 0 14px 0 0;
+  top: 0;
+  right: 0;
+}
+.rentalGpuSpecBox:nth-child(4)::before {
+  border-width: 2px 0px 0 2px;
+  border-color: rgba(255, 255, 255, .20);
+  border-radius: 14px 0 0 0;
+  top: 0;
+  left: 0;
+}
+.rentalGpuSpecBox .specCategory {
+  color: rgba(255,255,255,.5);
+  font-weight: 700;
+  font-size: 14px;
+}
+.rentalGpuSpecBox .specValue {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.rentalGpuSpecBox .specValue span {
+  font-size: 12px;
+  color: rgba(255,255,255,.5);
+}
+.rentalCardBtnBox::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  background-image: url("./Assets/gradient_cta_top.png");
+  background-size: 100%;
+  width: 100%;
+  height: 15px;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+.rentalCardBtnBox::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  background-image: url("./Assets/gradient_cta_top.png");
+  background-size: 100%;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 15px;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+.rentalCardBtnBox .rentalCardBtn {
+  background: linear-gradient(90deg, #ABAD5A -8.59%, #74F82D 41.61%, #8AF5EA 109.75%);
+  border: none;
+  border-radius: 10px;
+  padding: 6px 20px;
+  width: 60%;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  z-index: 10;
+  position: relative;
+}
+.rentalCardBtnBox .rentalCardBtn::before {
+  transition: all .5s;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(6px);
+  background: linear-gradient(90deg, #ABAD5A -8.59%, #74F82D 41.61%, #8AF5EA 109.75%);
+  box-shadow: 0 5px 20px green;
+  z-index: -2;
+  opacity: 0;
+}.rentalCardBtnBox .rentalCardBtn:hover::before{
+  opacity: 1;
+} 
+.rentalCardBtnBox .rentalCardPrice {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+}
+.blockChainNodeCard {
+  flex: 1 1 30%;
+  border-width: 2px 0px;
+  padding: 5px 10px 10px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+}
+.blockChainNodeCard .nodeStatus {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.blockChainCardBox {
+  border-width: 2px 0px;
+  padding: 20px;
+  border-radius: 16px;
+  border-style: solid;
+  background-color: rgb(32 32 32 / 48%);
+  border-color: rgba(255, 255, 255, .25);
+}
+.blockChainCardBox img {
+  border-width:  0 2px;
+  padding: 0px 20px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+}
+.nodeCardDetails {
+  padding-top: 5px;
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+.nodeCardDetails .cardValue {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  width: 50%;
+}
+.nodeCardDetails .cardValue::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  height: 24px;
+  width: 14px;
+  border-radius: 0 68px 36px 0;
+  border-width: 0px 2px 0 0px;
+  border-style: solid;
+  border-color: rgba(255,255,255,.25);
+  transform: rotate(48deg);
+}
+.nodeCardDetails .cardDuration {
+  font-size: 14px;
+  color: rgba(255,255,255,.5);
+  font-weight: 700;
+}
+.nodeCardDetails svg {
+  position: absolute;
+}
+.cardMsg {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,.7);
+}
+.buyGpu {
+  background-color: #000;
+}
+.buyGpu .modal-dialog .modal-content {
+  background-color: transparent;
+  color: #fff;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgba(255, 255, 255, .25);
+  padding: 10px 20px;
+}
+.buyGpu .modal-dialog {
+  margin: 40px auto 60px;
+}
+.modalClose {
+  padding: 20px;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .5);
+  filter: invert(1);
+  color: #000 !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  border-radius: 10px;
+  background-size: 12px;
+}
+.modal-header {
+  border: none;
+}
+.modal-header .modal-title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.modal-content .cartProduct {
+  padding: 20px;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgba(255, 255, 255, .25);
+}
+.cartProduct .productName {
+  color: #fff;
+  border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-radius: 18px;
+  border-color: rgba(255, 255, 255, .5);
+  font-weight: 700;
+  text-align: center;
+  padding: 0px 25px 0;
+  margin-bottom: 30px;
+}
+.productSpecificationContainer {
+  padding: 10px 20px 0;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: rgba(255, 255, 255, .5);
+}
+.productSpecificationBox .productSpecCategory {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+}
+.productSpecificationBox .productSpecVlaue {
+  font-size: 16px;
+  font-weight: 700;
+}
+.productSpecificationBox {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+}
+.productSpecificationBox:last-child {
+  border-bottom: none;
+}
+.productSpecCategory.effect {
+  padding: 0 0 0 20px;
+  width: 60px;
+}
+.productSpecCategory.effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 34px;
+  width: 16px;
+  padding: 0 0 20px 20px;
+  border-radius:  0 0 0 20px;
+  border-width: 0 0 2px 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .35);
+}
+.cartProduct img {
+  display: block;
+  margin: 0px auto;
+}
+.cartForm {
+  padding-bottom: 20px;
+  transform: translateY(40px);
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+  border-radius: 16px;
+}
+.formFieldsBox {
+  padding: 15px 15px 0;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+  border-radius: 30px;
+}
+.formFieldsBox .formFieldsHeading {
+  color: rgba(255, 255, 255, .5);
+  font-weight: 700;
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  padding: 0px 12px;
+}
+.formFieldsBox .formFields {
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .25);
+  background-color: transparent;
+  padding: 12px 25px;
+  width: 100%;
+  border-radius: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, .5); 
+  outline: none;
+}
+.form-check .form-check-label {
+  font-weight: 700;  
+}
+.form-check .form-check-label span {
+  font-weight: 600;
+  color: rgba(255, 255, 255, .5);
+  font-size: 14px;
+}
+.form-check-input {
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-color: rgba(255,255,255, .5);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 6px !important;
+}
+.form-check-input:checked {
+  background-color: transparent;
+  border-color: rgba(255,255,255, .5) !important;
+  box-shadow: none;
+  background-image: linear-gradient(90deg, #ABAD5A -8.59%, #74F82D 41.61%, #8AF5EA 109.75%) !important;
+}
+.form-check-input:focus {
+  border-color: rgba(255,255,255, .5);
+  box-shadow: none;
+}
+.copyCodeBox {
+  margin-top: 20px;
+  padding: 6px 20px;
+  border-width:  0 2px 0 2px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255,255,255, .5);
+}
+.copyCodeBox .code {
+  font-size: 18px;
+  font-weight: 700;
+}
+.copyCodeBox .copyIcon {
+  width: 35px;
+  border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .30);
+  padding: 10px;
+  border-radius: 14px;
+}
+.rentalMobileBox {
+  padding: 20px 10px;
+  border-width: 2px 0px;
+  border-radius: 16px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, .30);
+}
+.rentalMobileHeader h2 .label,
+.rentalMobileData .label,
+.rentalMobileDataFooter .label {
+  color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+}
+.rentalMobileHeader h2 .value {
+  color: #fff;
+  font-size: 16px;
+}
+.rentalMobileData .dataHeading {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.rentalMobileBox .dataValue,
+.rentalMobileDataFooter .dataValue {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+.rentalMobileBox .dataLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, .5);
+  margin-left: 4px;
+  font-weight: 600;
+}
+.rentalMobileDataBlock {
+  flex: 1 1 25%;
+}
+.rentalMobileBtn {
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  width: 200px;
+}
+.rentalMobileBtn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  background-image: url("/src/Assets/gradient_cta_top.png");
+  background-size: 100%;
+  width: 100%;
+  height: 32px;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+.rentalMobileBtn::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0px;
+  background-image: url("/src/Assets/gradient_cta_top.png");
+  background-size: 100%;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 32px;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+.dropdown-menu {
+  padding-top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: none !important;
+}
+.dropdown-menu li a {
+  color: #fff;
+  font-size: 14px;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+}
+
+
+/* media query */
+@media screen and (max-width: 575px) {
+  .rentalGpuSpecContainer {
+    padding: 20px 0;
+  }
+  .dropDownbtn {
+    padding: 10px 40px 10px 20px;
+  }
+  .componentMainScreen {
+    padding: 20px 10px;
+  }
+  .productSpecificationBox p {
+    width: 40%;
+  }
+  .form-check .form-check-label {
+    font-size: 13px;
+  }
+  .blockChainCardBox img {
+    width: 95px;
+  }
+  .resourcesData .resourceValue {
+    flex: 1 1 36%;
+    padding: 10px;
+  }
+  .mobileToggleBox .mobileToggle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .rentalCardBtnBox {
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .rentalGpuSpecContainer {
+    padding: 20px;
+  }
+  .dropDownbtn {
+    padding: 10px 50px 10px 20px;
+  }
+  .componentMainScreen {
+    padding: 20px;
+  }
+  .productSpecificationBox p {
+    width: 36%;
+  }
+  .blockChainCardBox img {
+    width: 120px;
+  }
+  .mobileToggleBox .mobileToggle {
+    font-size: 26px;
+  }
+  .resourcesData .resourceValue {
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .resourcesData .resourceValue {
+    flex:  0 0 48%;
+  }
+  .rentalCardBtnBox {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainComponentHeader .componentHeading {
+    font-size: 25px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .rentalCard {
+    flex: 1 1 50%;
+  }
+  .cartProduct img {
+    display: none;
+  }
+  table , tbody {
+    display: block;
+    width: 100%;
+  }
+  .resourcesData .resourceValue {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .totalCash .category {
+    width: 70px;
+    margin-left: 10px;
+  }
+  .dashboardData {
+    padding: 30px 10px 15px;
+  }
+  .totalCash {
+    padding: 0px 20px;
+    border-width:  0 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, .25);
+    border-radius: 16px;
+  }
+  .totalCash .resourceValue {
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .mainComponentHeader .componentHeading {
+    font-size: 35px;
+    border-radius: 16px;
+  }
+  .resourcesData .resourcesHeading {
+    width: 10%;
+  }
+  .resourceValue .category {
+    text-align: center;
+  }
+  .dashboardData {
+    padding: 40px 40px 15px;
+  }
+  .rentalCardBtnBox {
+    padding: 15px 13px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cartProduct img {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 991px)  {
+  .mainComponentHeaderBox {
+    width: 100%;
+  }
+  .headerSearchBar {
+    width: 100%;
+  }
+  .cartProduct .productName {
+    font-size: 18px;
+  }
+  .formFieldsBox .formFieldsHeading {
+    font-size: 15px;
+  }
+  .mobileToggleBox .mobileToggle {
+    padding: 0px 20px;
+    color: #fff;
+    border-width: 0px 2px;
+    border-style: solid;
+    margin: 0px auto;
+    border-color: rgba(255, 255, 255, .5);
+    border-radius: 8px;
+  }
+  .mobileToggleBox .mobileToggle.activeToggleLinks {
+    border: none;
+    position: relative;
+  }
+  .mobileToggleBox .mobileToggle.activeToggleLinks::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("./Assets/gradient_border_small_top.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 100%;
+    rotate: -90deg;
+  }
+  .mobileToggleBox .mobileToggle.activeToggleLinks::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("./Assets/gradient_border_small_top.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 100%;
+    rotate: 90deg;
+  }
+  .rentalCard,
+  .blockChainNodeCard {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mainComponentHeader .headerSearchBar {
+    width: 300px;
+  }
+  .cartProduct .productName {
+    font-size: 26px;
+  }
+  .formFieldsBox .formFieldsHeading {
+    font-size: 18px;
+  }
+  .cartProduct img {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width:1399px) {
+  .rentalCard {
+    flex: 1 1 40%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .rentalCard {
+    flex: 1 1 30%;
+  }
+}
